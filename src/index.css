@@ -1346,3 +1346,195 @@ section {
     order: -1;
   }
 }
+
+/* ============================================
+   COMPREHENSIVE MOBILE STYLES
+   ============================================ */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  /* Typography scaling */
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Spacing adjustments */
+  section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  /* Header */
+  .header {
+    height: 70px;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    display: none; /* Hide nav on mobile - would need hamburger menu */
+  }
+
+  .logo a {
+    font-size: 1.2rem;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 600px;
+    height: auto;
+    padding: var(--spacing-xl) 0;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem !important;
+    line-height: 1.2;
+  }
+
+  .hero-subtext {
+    font-size: 1rem;
+    padding: 0 var(--spacing-md);
+  }
+
+  .hero-footnote {
+    font-size: 0.75rem;
+    padding: 0 var(--spacing-md);
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: 0 var(--spacing-md);
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Buttons - larger tap targets */
+  .btn {
+    padding: 14px 28px;
+    font-size: 0.9rem;
+  }
+
+  /* Solutions grid */
+  .solutions-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  /* Commitment grid */
+  .commitment-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  /* Strategic Outcome */
+  .outcome-layout {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .outcome-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .breakdown-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-text {
+    font-size: 2rem;
+  }
+
+  /* Platform Showcase */
+  .showcase-tabs {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .tab-button {
+    width: 100%;
+    text-align: left;
+    padding: var(--spacing-md);
+  }
+
+  /* Footer */
+  .footer-links {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  /* Even smaller text */
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  /* Hero adjustments */
+  .hero h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .hero-subtext {
+    font-size: 0.95rem;
+  }
+
+  /* Reduce padding further */
+  section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  /* Cards */
+  .solution-card,
+  .commitment-card,
+  .metric-card {
+    padding: var(--spacing-md);
+  }
+
+  /* ROI Badge */
+  .roi-badge {
+    padding: var(--spacing-lg);
+  }
+
+  .roi-value {
+    font-size: 3rem;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.85rem;
+  }
+}

@@ -66,7 +66,7 @@ const PlatformShowcase = () => {
         <section ref={ref} className={`platform-showcase animate-on-scroll ${isVisible ? 'visible' : ''}`}>
             <div className="container">
                 <div className="showcase-header">
-                    <h2 className="section-title">The Gaia Platform</h2>
+                    <h2 className="section-title">Platform Capabilities</h2>
                     <p className="section-subtitle">Next-gen intelligence for automotive manufacturing.</p>
                 </div>
 

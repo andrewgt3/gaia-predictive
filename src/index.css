@@ -205,6 +205,24 @@ section {
   color: var(--color-accent);
 }
 
+/* CTA Button - Scroll-based visibility */
+.cta {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cta.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(20px);
+}
+
+.cta.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+
 /* Hero Styles */
 .hero {
   position: relative;
@@ -1353,6 +1371,7 @@ section {
 
 /* Tablet and below */
 @media (max-width: 768px) {
+
   /* Typography scaling */
   h1 {
     font-size: 2.5rem !important;
@@ -1387,7 +1406,8 @@ section {
   .nav ul {
     flex-direction: column;
     gap: var(--spacing-sm);
-    display: none; /* Hide nav on mobile - would need hamburger menu */
+    display: none;
+    /* Hide nav on mobile - would need hamburger menu */
   }
 
   .logo a {
@@ -1489,6 +1509,7 @@ section {
 
 /* Mobile phones */
 @media (max-width: 480px) {
+
   /* Even smaller text */
   h1 {
     font-size: 2rem !important;

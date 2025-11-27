@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import LineGraphIcon from './icons/LineGraphIcon';
 import ForecastIcon from './icons/ForecastIcon';
@@ -10,17 +11,20 @@ const Solutions = () => {
         {
             title: 'Asset Health Monitoring',
             Icon: LineGraphIcon,
-            description: 'Real-time tracking of machine performance and vital statistics.'
+            description: 'Real-time tracking of machine performance and vital statistics.',
+            link: '/solutions/asset-health-monitoring'
         },
         {
-            title: 'Failure Prediction',
+            title: 'Predictive Maintenance',
             Icon: ForecastIcon,
-            description: 'AI-driven forecasting of component failures before they occur.'
+            description: 'AI-driven forecasting of component failures before they occur.',
+            link: '/solutions/predictive-maintenance'
         },
         {
-            title: 'Optimization Logic',
+            title: 'Production Optimization',
             Icon: CircuitIcon,
-            description: 'Automated recommendations to maximize throughput and efficiency.'
+            description: 'Automated recommendations to maximize throughput and efficiency.',
+            link: '/solutions/production-optimization'
         }
     ];
 
@@ -34,16 +38,18 @@ const Solutions = () => {
                 <h2 className="section-title">Our Predictive Maintenance Solutions</h2>
                 <div className="solutions-grid">
                     {solutions.map((sol, index) => (
-                        <div key={index} className="solution-card">
-                            <div className="card-icon">
-                                <sol.Icon size={64} className="icon-svg" />
+                        <Link to={sol.link} key={index} className="solution-card-link">
+                            <div className="solution-card">
+                                <div className="card-icon">
+                                    <sol.Icon size={64} className="icon-svg" />
+                                </div>
+                                <h3>{sol.title}</h3>
+                                <p>{sol.description}</p>
+                                <div className="card-link">
+                                    Learn more <span className="arrow">→</span>
+                                </div>
                             </div>
-                            <h3>{sol.title}</h3>
-                            <p>{sol.description}</p>
-                            <div className="card-link">
-                                Learn more <span className="arrow">→</span>
-                            </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

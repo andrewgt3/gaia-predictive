@@ -1,0 +1,295 @@
+/* ============================================
+   SOLUTION DETAIL PAGES STYLES
+   ============================================ */
+
+.solution-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.solution-card-link:hover {
+    transform: scale(1.02);
+}
+
+/* Solution Detail Page */
+.solution-detail-page {
+    padding-top: var(--header-height);
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.solution-hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    padding: var(--spacing-xxl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.solution-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(209, 73, 0, 0.1) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+}
+
+.back-button {
+    background: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-lg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    transform: translateX(-5px);
+}
+
+.solution-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    z-index: 1;
+}
+
+.solution-subtitle {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-lg);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.solution-hero-description {
+    font-size: 1.25rem;
+    max-width: 800px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Benefits Section */
+.solution-benefits {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-xxl) 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.benefit-card {
+    background-color: var(--color-surface);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.benefit-card h3 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-sm);
+}
+
+.benefit-card p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* How It Works Section */
+.solution-how-it-works {
+    background-color: var(--color-primary);
+    padding: var(--spacing-xxl) 0;
+}
+
+.how-it-works-steps {
+    max-width: 800px;
+    margin: var(--spacing-xl) auto 0;
+}
+
+.work-step {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.work-step:last-child {
+    border-bottom: none;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-accent);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-content-detail h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+}
+
+.step-content-detail p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Use Cases Section */
+.solution-use-cases {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-xxl) 0;
+}
+
+.use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.use-case-card {
+    background-color: var(--color-surface);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    border-left: 4px solid var(--color-accent);
+}
+
+.use-case-card h3 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-md);
+}
+
+.use-case-scenario {
+    font-style: italic;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.use-case-result {
+    color: var(--color-text);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Technical Specs Section */
+.solution-specs {
+    background-color: var(--color-primary);
+    padding: var(--spacing-xxl) 0;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.spec-item {
+    background-color: var(--color-surface);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+}
+
+.spec-item h4 {
+    color: var(--color-accent);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.spec-item p {
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+/* CTA Section */
+.solution-cta {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+    padding: var(--spacing-xxl) 0;
+    text-align: center;
+}
+
+.solution-cta h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.solution-cta p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+    opacity: 0.9;
+}
+
+.btn-large {
+    padding: 16px 48px;
+    font-size: 1.1rem;
+}
+
+/* Mobile Responsiveness for Solution Pages */
+@media (max-width: 768px) {
+    .solution-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .solution-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .solution-hero-description {
+        font-size: 1rem;
+    }
+
+    .benefits-grid,
+    .use-cases-grid,
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-step {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+}

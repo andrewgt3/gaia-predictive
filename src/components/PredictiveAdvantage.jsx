@@ -9,19 +9,19 @@ const PredictiveAdvantage = () => {
     const steps = [
         {
             title: 'INGEST',
-            subtitle: 'IoT Sensor Data & ML',
+            subtitle: <><strong>IoT Sensor Data</strong> & <strong>ML</strong></>,
             Icon: IngestIcon,
             description: 'Seamlessly aggregate data from thousands of sensors across your production line.'
         },
         {
             title: 'ANALYZE',
-            subtitle: 'Proprietary Failure Algorithms',
+            subtitle: <><strong>Proprietary Failure Algorithms</strong></>,
             Icon: AnalyzeIcon,
             description: 'Our deep learning models identify subtle patterns that indicate impending failure.'
         },
         {
             title: 'PREDICT',
-            subtitle: 'Actionable Maintenance Intelligence',
+            subtitle: <><strong>Actionable Maintenance Intelligence</strong></>,
             Icon: PredictIcon,
             description: 'Receive precise alerts with prescribed actions to prevent downtime before it happens.'
         }

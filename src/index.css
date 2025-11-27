@@ -1409,14 +1409,17 @@ section {
   /* Typography scaling */
   h1 {
     font-size: 2.5rem !important;
+    text-align: center;
   }
 
   h2 {
     font-size: 2rem;
+    text-align: center;
   }
 
   h3 {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   /* Spacing adjustments */
@@ -1435,6 +1438,7 @@ section {
 
   .header-content {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .nav ul {
@@ -1453,6 +1457,10 @@ section {
     min-height: 600px;
     height: auto;
     padding: var(--spacing-xl) 0;
+  }
+
+  .hero-content {
+    text-align: center;
   }
 
   .hero h1 {
@@ -1529,6 +1537,44 @@ section {
     padding: var(--spacing-md);
   }
 
+  .showcase-header {
+    text-align: center !important;
+  }
+
+  .section-title {
+    text-align: center !important;
+  }
+
+  .section-subtitle {
+    text-align: center !important;
+  }
+
+  /* Predictive Advantage */
+  .steps-container {
+    text-align: center;
+  }
+
+  .step-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .step-content {
+    text-align: center;
+  }
+
+  /* Data vs Downtime */
+  .split-content {
+    text-align: center;
+  }
+
+  /* Strategic Outcome */
+  .outcome-primary,
+  .outcome-secondary {
+    text-align: center;
+  }
+
   /* Footer */
   .footer-links {
     flex-direction: column;
@@ -1538,6 +1584,7 @@ section {
 
   .footer-column {
     width: 100%;
+    text-align: center;
   }
 }
 

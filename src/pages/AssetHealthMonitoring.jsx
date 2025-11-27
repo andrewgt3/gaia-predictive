@@ -1,5 +1,5 @@
 import React from 'react';
-import SolutionDetailPage from './SolutionDetailPage';
+import SolutionDetailPage from '../components/SolutionDetailPage';
 
 const AssetHealthMonitoring = () => {
     const pageData = {

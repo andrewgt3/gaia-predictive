@@ -34,7 +34,8 @@
   --spacing-xxl: 8rem;
 
   /* Layout */
-  --container-width: 1200px;
+  --container-width: 1400px;
+  /* Increased from 1200px to reduce whitespace */
   --header-height: 80px;
 }
 

@@ -7,6 +7,9 @@
     color: inherit;
     display: block;
     transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 
 .solution-card-link:hover {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { TrendingUp, Settings, RefreshCw, Rocket } from 'lucide-react';
 import SolutionDetailPage from '../components/SolutionDetailPage';
 
 const ProductionOptimization = () => {
@@ -9,22 +10,22 @@ const ProductionOptimization = () => {
 
         benefits: [
             {
-                icon: "📈",
+                icon: <TrendingUp size={48} />,
                 title: "Increase OEE by 15-25%",
                 description: "Improve Overall Equipment Effectiveness through optimized cycle times, reduced changeovers, and minimized quality defects."
             },
             {
-                icon: "⚙️",
+                icon: <Settings size={48} />,
                 title: "Eliminate Bottlenecks",
                 description: "Real-time production analytics identify constraint points in your process, enabling targeted improvements that unlock capacity."
             },
             {
-                icon: "♻️",
+                icon: <RefreshCw size={48} />,
                 title: "Reduce Scrap by 30%",
                 description: "Quality prediction models detect process drift before defects occur, preventing scrap generation and rework costs."
             },
             {
-                icon: "🚀",
+                icon: <Rocket size={48} />,
                 title: "Boost Throughput",
                 description: "Optimize machine parameters, material flow, and production sequencing to increase output without capital investment."
             }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Activity, Zap, TrendingDown, Wrench } from 'lucide-react';
 import SolutionDetailPage from '../components/SolutionDetailPage';
 
 const AssetHealthMonitoring = () => {
@@ -9,22 +10,22 @@ const AssetHealthMonitoring = () => {
 
         benefits: [
             {
-                icon: "📊",
+                icon: <Activity size={48} />,
                 title: "Real-Time Visibility",
                 description: "Monitor equipment health across your entire fleet with live dashboards showing performance metrics, vibration analysis, and thermal imaging data."
             },
             {
-                icon: "⚡",
+                icon: <Zap size={48} />,
                 title: "Instant Anomaly Detection",
                 description: "AI-powered algorithms detect deviations from normal operating parameters within milliseconds, triggering immediate alerts before failures occur."
             },
             {
-                icon: "💰",
+                icon: <TrendingDown size={48} />,
                 title: "Reduce Downtime by 40%",
                 description: "Proactive monitoring eliminates unexpected breakdowns, reducing unplanned downtime and associated production losses."
             },
             {
-                icon: "🔧",
+                icon: <Wrench size={48} />,
                 title: "Optimize Maintenance",
                 description: "Shift from reactive to predictive maintenance schedules, reducing maintenance costs by 25% while extending asset lifespan."
             }

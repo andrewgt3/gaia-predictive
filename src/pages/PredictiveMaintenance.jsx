@@ -1,4 +1,5 @@
 import React from 'react';
+import { Sparkles, CalendarClock, Banknote, Target } from 'lucide-react';
 import SolutionDetailPage from '../components/SolutionDetailPage';
 
 const PredictiveMaintenance = () => {
@@ -9,22 +10,22 @@ const PredictiveMaintenance = () => {
 
         benefits: [
             {
-                icon: "🔮",
+                icon: <Sparkles size={48} />,
                 title: "Forecast Failures 2-4 Weeks Ahead",
                 description: "Advanced AI models analyze historical and real-time data to predict component failures with 95%+ accuracy, giving you ample time to plan maintenance."
             },
             {
-                icon: "📅",
+                icon: <CalendarClock size={48} />,
                 title: "Optimize Maintenance Schedules",
                 description: "Replace time-based maintenance with condition-based scheduling, performing maintenance only when needed and avoiding premature part replacement."
             },
             {
-                icon: "💵",
+                icon: <Banknote size={48} />,
                 title: "12x ROI on Maintenance Spend",
                 description: "Reduce maintenance costs by 30-40% while simultaneously increasing equipment uptime and production output."
             },
             {
-                icon: "🎯",
+                icon: <Target size={48} />,
                 title: "Precision Diagnostics",
                 description: "Identify specific failing components (bearings, motors, belts) rather than replacing entire assemblies, minimizing parts inventory and labor costs."
             }

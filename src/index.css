@@ -1741,9 +1741,6 @@ section {
 }
 
 /* Contact Section */
-}
-
-/* Contact Section */
 .contact-section {
   padding: var(--spacing-xxl) 0;
   background-color: var(--color-surface);

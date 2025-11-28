@@ -30,7 +30,7 @@ const Header = () => {
                     </ul>
                 </nav>
                 <div className={`cta ${isScrolled ? 'visible' : 'hidden'}`}>
-                    <button className="btn btn-primary">Request Custom Demo</button>
+                    <a href="mailto:contact@gaiapredictive.com?subject=Request%20Custom%20Demo" className="btn btn-primary">Request Custom Demo</a>
                 </div>
             </div>
         </header>

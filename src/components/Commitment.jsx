@@ -28,7 +28,7 @@ const Commitment = () => {
     };
 
     return (
-        <section ref={ref} className={`commitment animate-on-scroll ${isVisible ? 'visible' : ''}`}>
+        <section id="about" ref={ref} className={`commitment animate-on-scroll ${isVisible ? 'visible' : ''}`}>
             <div className="container">
                 <h2 className="section-title">OUR COMMITMENT TO YOUR SYSTEM</h2>
                 <div className="commitment-grid">

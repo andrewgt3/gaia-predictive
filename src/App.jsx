@@ -10,10 +10,9 @@ import Solutions from './components/Solutions';
 import DataVsDowntime from './components/DataVsDowntime';
 import PredictiveAdvantage from './components/PredictiveAdvantage';
 import StrategicOutcome from './components/StrategicOutcome';
-import Footer from './components/Footer';
-import AssetHealthMonitoring from './pages/AssetHealthMonitoring';
-import PredictiveMaintenance from './pages/PredictiveMaintenance';
-import ProductionOptimization from './pages/ProductionOptimization';
+import Contact from './components/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 // Home page component
 const HomePage = () => (
@@ -25,6 +24,7 @@ const HomePage = () => (
     <DataVsDowntime />
     <PredictiveAdvantage />
     <StrategicOutcome />
+    <Contact />
   </>
 );
 
@@ -38,6 +38,8 @@ function App() {
           <Route path="/solutions/asset-health-monitoring" element={<AssetHealthMonitoring />} />
           <Route path="/solutions/predictive-maintenance" element={<PredictiveMaintenance />} />
           <Route path="/solutions/production-optimization" element={<ProductionOptimization />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
         </Routes>
         <Footer />
       </div>

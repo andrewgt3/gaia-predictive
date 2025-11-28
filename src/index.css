@@ -1640,4 +1640,102 @@ section {
     padding: 12px 24px;
     font-size: 0.85rem;
   }
+
+  /* Contact Section */
+  .contact-section {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+  }
+
+  .contact-info h3,
+  .contact-cta h3 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .contact-methods {
+    margin-top: var(--spacing-lg);
+  }
+
+  .contact-method {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+  }
+
+  .contact-icon {
+    color: var(--color-accent);
+  }
+
+  .contact-cta {
+    background: rgba(255, 255, 255, 0.03);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+  }
+
+  .contact-cta p {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  /* Legal Pages */
+  .legal-page {
+    padding-top: calc(var(--header-height) + var(--spacing-xl));
+    padding-bottom: var(--spacing-xxl);
+    min-height: 100vh;
+  }
+
+  .legal-page h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+  }
+
+  .last-updated {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xl);
+    font-style: italic;
+  }
+
+  .legal-page section {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .legal-page h2 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.5rem;
+  }
+
+  .legal-page p,
+  .legal-page li {
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .legal-page ul {
+    margin-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+  }
+
+  @media (max-width: 768px) {
+    .contact-content {
+      grid-template-columns: 1fr;
+    }
+
+    .legal-page h1 {
+      font-size: 2rem;
+    }
+  }
 }

@@ -7,12 +7,12 @@ import Hero from './components/Hero';
 import Commitment from './components/Commitment';
 import PlatformShowcase from './components/PlatformShowcase';
 import Solutions from './components/Solutions';
-import DataVsDowntime from './components/DataVsDowntime';
-import PredictiveAdvantage from './components/PredictiveAdvantage';
-import StrategicOutcome from './components/StrategicOutcome';
-import Contact from './components/Contact';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfService from './pages/TermsOfService';
+// import AssetHealthMonitoring from './pages/AssetHealthMonitoring';
+// import PredictiveMaintenance from './pages/PredictiveMaintenance';
+// import ProductionOptimization from './pages/ProductionOptimization';
+// import Contact from './components/Contact';
+// import PrivacyPolicy from './pages/PrivacyPolicy';
+// import TermsOfService from './pages/TermsOfService';
 
 // Home page component
 const HomePage = () => (

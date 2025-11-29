@@ -29,6 +29,7 @@ const Commitment = () => {
         <section id="about" ref={ref} className={`commitment animate-on-scroll ${isVisible ? 'visible' : ''}`}>
             <div className="container">
                 <h2 className="section-title">Our Commitment to Your System</h2>
+                <p className="section-subtitle">Zero disruption. Maximum security. Built for your infrastructure.</p>
                 <div className="commitment-list">
                     {commitments.map((item, index) => (
                         <div key={index} className="commitment-item">

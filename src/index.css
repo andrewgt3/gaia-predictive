@@ -1545,6 +1545,10 @@ section {
     text-align: center;
   }
 
+  .step-line {
+    display: none;
+  }
+
   /* Data vs Downtime */
   .split-content {
     text-align: center;

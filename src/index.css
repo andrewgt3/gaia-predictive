@@ -380,7 +380,7 @@ section {
   width: 100%;
   height: 250px;
   /* Reduced from 400px to start lower */
-  background: linear-gradient(to bottom, transparent 0%, rgba(15, 23, 42, 0.95) 50%, #0f172a 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(15, 20, 25, 0.98) 50%, #0f1419 100%);
   z-index: 3;
   pointer-events: none;
 }
@@ -443,8 +443,8 @@ section {
 
 /* Commitment Styles */
 .commitment {
-  /* Changed to deep blue-black to match video header better */
-  background: radial-gradient(circle at 50% 0%, #0f172a 0%, #020617 100%);
+  /* Changed to gray-black color scheme */
+  background: radial-gradient(circle at 50% 0%, #1a1f29 0%, #0a0e14 100%);
   padding: var(--spacing-xxl) 0;
   position: relative;
   overflow: hidden;

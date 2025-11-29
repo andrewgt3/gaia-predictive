@@ -899,6 +899,12 @@ section {
   text-align: center;
 }
 
+.predictive-advantage .section-title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .steps-container {
   max-width: 600px;
   margin: 0 auto;
@@ -1304,6 +1310,13 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.showcase-header .section-title,
+.showcase-header .section-subtitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-subtitle {

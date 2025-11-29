@@ -481,8 +481,6 @@ section {
   z-index: 2;
   width: 100%;
   margin-bottom: var(--spacing-md);
-  pointer-events: none;
-  /* Let clicks pass through if needed */
 }
 
 .commitment-number {
@@ -511,7 +509,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  pointer-events: none;
 }
 
 .commitment-image-container {

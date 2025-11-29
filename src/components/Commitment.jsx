@@ -32,14 +32,14 @@ const Commitment = () => {
                 <div className="commitment-list">
                     {commitments.map((item, index) => (
                         <div key={index} className="commitment-item">
+                            <div className="commitment-image-container">
+                                <img src={item.image} alt={item.title} className="commitment-image" />
+                            </div>
                             <div className="commitment-left">
                                 <div className="commitment-number">{item.number}</div>
                                 <h3 className="commitment-title">{item.title}</h3>
                             </div>
                             <div className="commitment-right">
-                                <div className="commitment-image-container">
-                                    <img src={item.image} alt={item.title} className="commitment-image" />
-                                </div>
                                 <p className="commitment-description">{item.description}</p>
                             </div>
                         </div>

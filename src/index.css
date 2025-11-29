@@ -452,6 +452,12 @@ section {
   padding: var(--spacing-xxl) 0;
   position: relative;
   overflow: hidden;
+  text-align: center;
+}
+
+.commitment .section-title,
+.commitment .section-subtitle {
+  text-align: center;
 }
 
 /* Add a subtle grid overlay if desired, or keep it clean */

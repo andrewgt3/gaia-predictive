@@ -54,24 +54,6 @@ const AssetHealthMonitoring = () => {
             }
         ],
 
-        useCases: [
-            {
-                title: "Automotive Assembly Line",
-                scenario: "A tier-1 automotive supplier was experiencing frequent unplanned downtime on critical robotic welding stations.",
-                result: "After implementing Asset Health Monitoring, they reduced downtime by 38% and extended robot lifespan by 2 years, saving $1.2M annually."
-            },
-            {
-                title: "CNC Machining Center",
-                scenario: "A precision parts manufacturer needed to prevent catastrophic spindle failures that caused weeks of production delays.",
-                result: "Vibration monitoring detected early bearing wear, allowing scheduled replacement during planned maintenance windows. Zero unplanned failures in 18 months."
-            },
-            {
-                title: "Conveyor Systems",
-                scenario: "A large-scale production facility struggled with conveyor belt failures disrupting material flow across 12 production lines.",
-                result: "Thermal imaging and motor current analysis identified failing motors 3 weeks in advance, eliminating emergency shutdowns."
-            }
-        ],
-
         technicalSpecs: [
             { label: "Data Refresh Rate", value: "Real-time (< 1 second latency)" },
             { label: "Supported Sensors", value: "Vibration, Temperature, Pressure, Current, Ultrasonic, Thermal" },

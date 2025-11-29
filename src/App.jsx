@@ -9,7 +9,6 @@ import PlatformShowcase from './components/PlatformShowcase';
 import Solutions from './components/Solutions';
 import DataVsDowntime from './components/DataVsDowntime';
 import PredictiveAdvantage from './components/PredictiveAdvantage';
-import StrategicOutcome from './components/StrategicOutcome';
 import AssetHealthMonitoring from './pages/AssetHealthMonitoring';
 import PredictiveMaintenance from './pages/PredictiveMaintenance';
 import ProductionOptimization from './pages/ProductionOptimization';
@@ -35,6 +34,7 @@ const HomePage = () => (
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Header />
         <Routes>

@@ -54,24 +54,6 @@ const ProductionOptimization = () => {
             }
         ],
 
-        useCases: [
-            {
-                title: "Injection Molding Optimization",
-                scenario: "A plastics manufacturer struggled with inconsistent cycle times and 8% scrap rate due to process variability.",
-                result: "AI-optimized injection parameters reduced cycle time by 12% and scrap to 2.5%, increasing capacity by 15% without new equipment."
-            },
-            {
-                title: "Assembly Line Balancing",
-                scenario: "An automotive assembly line had uneven workload distribution, causing bottlenecks and 22% idle time at certain stations.",
-                result: "Production optimization rebalanced tasks across stations, reducing idle time to 8% and increasing line throughput by 18%."
-            },
-            {
-                title: "Quality Defect Prevention",
-                scenario: "A metal stamping operation experienced 12% scrap rate due to tool wear and material variations.",
-                result: "Predictive quality models detected process drift early, enabling real-time adjustments. Scrap rate dropped to 3.5%, saving $850K annually."
-            }
-        ],
-
         technicalSpecs: [
             { label: "Data Sources", value: "MES, SCADA, PLC, ERP, QMS" },
             { label: "Optimization Algorithms", value: "Genetic Algorithms, Reinforcement Learning, Constraint Programming" },

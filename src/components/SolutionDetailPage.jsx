@@ -1,17 +1,15 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const SolutionDetailPage = ({ title, subtitle, heroDescription, benefits, howItWorks, useCases, technicalSpecs }) => {
-    const navigate = useNavigate();
-
+const SolutionDetailPage = ({ title, subtitle, heroDescription, benefits, howItWorks, technicalSpecs }) => {
     return (
         <div className="solution-detail-page">
             {/* Hero Section */}
             <section className="solution-hero">
                 <div className="container">
-                    <button className="back-button" onClick={() => navigate('/')}>
+                    <Link to="/" className="back-button">
                         ← Back to Home
-                    </button>
+                    </Link>
                     <h1>{title}</h1>
                     <p className="solution-subtitle">{subtitle}</p>
                     <p className="solution-hero-description">{heroDescription}</p>
@@ -52,36 +50,22 @@ const SolutionDetailPage = ({ title, subtitle, heroDescription, benefits, howItW
                 </div>
             </section>
 
-            {/* Use Cases */}
-            <section className="solution-use-cases">
-                <div className="container">
-                    <h2>Real-World Applications</h2>
-                    <div className="use-cases-grid">
-                        {useCases.map((useCase, index) => (
-                            <div key={index} className="use-case-card">
-                                <h3>{useCase.title}</h3>
-                                <p className="use-case-scenario">{useCase.scenario}</p>
-                                <p className="use-case-result"><strong>Result:</strong> {useCase.result}</p>
-                            </div>
-                        ))}
+            {/* Technical Specs - Conditional */}
+            {technicalSpecs && technicalSpecs.length > 0 && (
+                <section className="solution-specs">
+                    <div className="container">
+                        <h2>Technical Specifications</h2>
+                        <div className="specs-grid">
+                            {technicalSpecs.map((spec, index) => (
+                                <div key={index} className="spec-item">
+                                    <h4>{spec.label}</h4>
+                                    <p>{spec.value}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
-            </section>
-
-            {/* Technical Specs */}
-            <section className="solution-specs">
-                <div className="container">
-                    <h2>Technical Specifications</h2>
-                    <div className="specs-grid">
-                        {technicalSpecs.map((spec, index) => (
-                            <div key={index} className="spec-item">
-                                <h4>{spec.label}</h4>
-                                <p>{spec.value}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                </section>
+            )}
 
             {/* CTA Section */}
             <section className="solution-cta">

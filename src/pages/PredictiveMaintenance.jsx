@@ -11,7 +11,7 @@ const PredictiveMaintenance = () => {
         benefits: [
             {
                 icon: <Sparkles size={48} />,
-                title: "Forecast Failures 2-4 Weeks Ahead",
+                title: "Forecast Failures 3-12 Days Ahead",
                 description: "Advanced AI models analyze historical and real-time data to predict component failures with 95%+ accuracy, giving you ample time to plan maintenance."
             },
             {
@@ -22,7 +22,7 @@ const PredictiveMaintenance = () => {
             {
                 icon: <Banknote size={48} />,
                 title: "12x ROI on Maintenance Spend",
-                description: "Reduce maintenance costs by 30-40% while simultaneously increasing equipment uptime and production output."
+                description: "Reduce maintenance costs by 30-40% while simultaneously increasing equipment uptime and production output. (Source: Deloitte/DOE)"
             },
             {
                 icon: <Target size={48} />,
@@ -52,33 +52,6 @@ const PredictiveMaintenance = () => {
                 title: "Continuous Learning",
                 description: "Models improve over time by learning from actual failure events and maintenance outcomes, increasing prediction accuracy."
             }
-        ],
-
-        useCases: [
-            {
-                title: "Electric Motor Failures",
-                scenario: "A manufacturing plant experienced frequent motor failures on critical production equipment, causing 5-7 days of downtime per incident.",
-                result: "Predictive models detected bearing degradation 3 weeks before failure, allowing scheduled replacement during weekend maintenance. Downtime reduced to 4 hours."
-            },
-            {
-                title: "Hydraulic System Leaks",
-                scenario: "Hydraulic press systems were failing unpredictably, causing oil contamination and expensive emergency repairs.",
-                result: "Pressure and temperature analysis predicted seal failures 2 weeks in advance. Maintenance costs dropped 45% while eliminating contamination incidents."
-            },
-            {
-                title: "Gearbox Degradation",
-                scenario: "Critical gearboxes in a stamping line were failing catastrophically, requiring 10+ days for replacement and costing $250K per incident.",
-                result: "Vibration analysis detected gear tooth wear 6 weeks early, enabling planned replacement during annual shutdown. Zero catastrophic failures in 2 years."
-            }
-        ],
-
-        technicalSpecs: [
-            { label: "Prediction Accuracy", value: "95%+ for trained equipment types" },
-            { label: "Forecast Window", value: "2-12 weeks depending on failure mode" },
-            { label: "AI Models", value: "LSTM, Random Forest, Gradient Boosting, Transformer Networks" },
-            { label: "Training Data Required", value: "Minimum 6 months of historical data" },
-            { label: "Supported Equipment", value: "Motors, Pumps, Compressors, Gearboxes, Bearings, Conveyors" },
-            { label: "Model Updates", value: "Continuous learning with weekly retraining cycles" }
         ]
     };
 

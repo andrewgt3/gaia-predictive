@@ -1524,9 +1524,9 @@ section {
 
   /* Hero */
   .hero {
-    min-height: 600px;
-    height: auto;
-    padding: var(--spacing-xl) 0;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0;
   }
 
   .hero-content {

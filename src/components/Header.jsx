@@ -5,7 +5,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            // Show button after scrolling 100px
+            // Hide button after scrolling 100px
             setIsScrolled(window.scrollY > 100);
         };
 
@@ -29,7 +29,7 @@ const Header = () => {
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <div className={`cta ${isScrolled ? 'visible' : 'hidden'}`}>
+                <div className={`cta ${isScrolled ? 'hidden' : 'visible'}`}>
                     <a href="mailto:andrew.dimaggio@gaiapredictive.com?subject=Request%20Custom%20Demo" className="btn btn-primary">Request Custom Demo</a>
                 </div>
             </div>

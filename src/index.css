@@ -1409,7 +1409,7 @@ section {
 
   /* Header */
   .header {
-    height: 70px;
+    height: 50px;
   }
 
   .header-content {
@@ -1483,6 +1483,11 @@ section {
     gap: var(--spacing-md);
   }
 
+  .commitment-list {
+    margin-top: var(--spacing-lg);
+    gap: var(--spacing-lg);
+  }
+
   /* Strategic Outcome */
   .outcome-layout {
     grid-template-columns: 1fr;
@@ -1542,6 +1547,19 @@ section {
 
   /* Data vs Downtime */
   .split-content {
+    text-align: center;
+  }
+
+  .split-content.right {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .split-content.right h2,
+  .split-content.right p {
     text-align: center;
   }
 

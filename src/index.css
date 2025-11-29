@@ -423,8 +423,26 @@ section {
 
 /* Commitment Styles */
 .commitment {
-  background-color: var(--color-secondary);
+  background: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #050505 100%);
   padding: var(--spacing-xxl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add a subtle grid overlay if desired, or keep it clean */
+.commitment::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .commitment-list {
@@ -471,37 +489,58 @@ section {
 
 .commitment-right {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: var(--spacing-lg);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  width: 100%;
 }
 
 .commitment-image-container {
-  width: 120px;
-  height: 120px;
-  border-radius: 12px;
+  width: 100%;
+  height: 280px;
+  border-radius: 4px;
+  /* Sharper corners for tech feel */
   overflow: hidden;
   flex-shrink: 0;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+/* Add a scanline or overlay effect to images */
+.commitment-image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.2) 50%);
+  background-size: 100% 4px;
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .commitment-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.7s cubic-bezier(0.2, 1, 0.3, 1);
 }
 
 .commitment-item:hover .commitment-image {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .commitment-description {
   font-size: 1.125rem;
   line-height: 1.6;
   color: var(--color-text-secondary);
-  max-width: 500px;
-  text-align: right;
+  max-width: 100%;
+  text-align: left;
+  /* Left align for better readability */
+  margin-top: var(--spacing-sm);
 }
 
 /* Solutions Styles */
@@ -1660,7 +1699,7 @@ section {
   .commitment-image-container {
     width: 100%;
     max-width: 100%;
-    height: 200px;
+    height: 240px;
     margin-bottom: var(--spacing-md);
   }
 

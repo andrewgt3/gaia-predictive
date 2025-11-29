@@ -358,11 +358,14 @@ section {
 }
 
 .hero h1 {
-  margin-bottom: var(--spacing-lg);
-  letter-spacing: -1px;
-  font-size: 4.2rem;
-  /* Increased by 20% from 3.5rem */
-  font-weight: 800;
+  font-size: 5.5rem !important;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
 }
 
 .hero-subtext {
@@ -1513,8 +1516,37 @@ section {
   }
 
   .hero h1 {
-    font-size: 2.2rem !important;
+    font-size: 2.5rem !important;
     line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.6);
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    40% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+
+    60% {
+      transform: translateX(-50%) translateY(-5px);
+    }
   }
 
   .hero-subtext {
@@ -1664,7 +1696,7 @@ section {
 
   /* Even smaller text */
   h1 {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
   }
 
   h2 {

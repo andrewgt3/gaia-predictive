@@ -27,15 +27,11 @@ const Hero = () => {
             </div>
             <div className="container hero-content">
                 <h1 className="animate-fade-up">OPERATIONAL LOGIC DRIVING ZERO-LOSS MANUFACTURING.</h1>
-                <p className="hero-subtext animate-fade-up" style={{ animationDelay: '0.2s' }}>
-                    We integrate deep machine intelligence with your existing operational data to forecast catastrophic failure, ensuring guaranteed production continuity and optimized resource alignment.
-                </p>
-                <p className="hero-footnote animate-fade-up" style={{ animationDelay: '0.3s' }}>
-                    Utilizing existing plant sensors and FIS data — Zero hardware Capex required.
-                </p>
-                <div className="hero-ctas animate-fade-up" style={{ animationDelay: '0.4s' }}>
-                    <button className="btn btn-primary">REQUEST A CUSTOM DEMO</button>
-                    <button className="btn btn-secondary" onClick={handleLearnMore}>LEARN HOW IT WORKS</button>
+
+                <div className="scroll-indicator animate-fade-up" style={{ animationDelay: '0.6s' }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+                    </svg>
                 </div>
             </div>
         </section>

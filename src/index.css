@@ -473,6 +473,27 @@ section {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.commitment-image-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.commitment-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.commitment-item:hover .commitment-image {
+  transform: scale(1.1);
 }
 
 .commitment-description {
@@ -1631,6 +1652,16 @@ section {
 
   .commitment-right {
     justify-content: flex-start;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .commitment-image-container {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: var(--spacing-md);
   }
 
   .commitment-title {

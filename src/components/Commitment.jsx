@@ -8,17 +8,20 @@ const Commitment = () => {
         {
             number: '/0.1',
             title: 'Read-Only Integration',
-            description: 'We connect only to existing FIS/sensor data. Zero intrusion, zero network changes required.'
+            description: 'We connect only to existing FIS/sensor data. Zero intrusion, zero network changes required.',
+            image: '/images/commitment-1.jpg'
         },
         {
             number: '/0.2',
             title: 'Cybersecurity Compliant',
-            description: 'Hardware-enforced unidirectional data access ensures complete OT network protection.'
+            description: 'Hardware-enforced unidirectional data access ensures complete OT network protection.',
+            image: '/images/commitment-2.jpg'
         },
         {
             number: '/0.3',
             title: 'Alignment First',
-            description: 'Custom deployment built hand-in-hand with your executive, IT, and plant teams.'
+            description: 'Custom deployment built hand-in-hand with your executive, IT, and plant teams.',
+            image: '/images/commitment-3.jpg'
         }
     ];
 
@@ -34,6 +37,9 @@ const Commitment = () => {
                                 <h3 className="commitment-title">{item.title}</h3>
                             </div>
                             <div className="commitment-right">
+                                <div className="commitment-image-container">
+                                    <img src={item.image} alt={item.title} className="commitment-image" />
+                                </div>
                                 <p className="commitment-description">{item.description}</p>
                             </div>
                         </div>

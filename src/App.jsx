@@ -26,7 +26,6 @@ const HomePage = () => (
     <Solutions />
     <DataVsDowntime />
     <PredictiveAdvantage />
-    <StrategicOutcome />
     <Contact />
   </>
 );

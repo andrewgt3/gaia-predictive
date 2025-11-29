@@ -18,7 +18,7 @@ const Hero = () => {
                     playsInline
                     className="hero-video"
                 >
-                    <source src="https://assets.gaiapredictive.com/footage for header .mp4" type="video/mp4" />
+                    <source src="https://assets.gaiapredictive.com/footage%20for%20header%20.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
 

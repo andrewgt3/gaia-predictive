@@ -66,15 +66,6 @@ const SolutionDetailPage = ({ title, subtitle, heroDescription, benefits, howItW
                     </div>
                 </section>
             )}
-
-            {/* CTA Section */}
-            <section className="solution-cta">
-                <div className="container">
-                    <h2>Ready to Transform Your Operations?</h2>
-                    <p>Schedule a custom demo to see how {title} can revolutionize your manufacturing process.</p>
-                    <button className="btn btn-primary btn-large">Request Custom Demo</button>
-                </div>
-            </section>
         </div>
     );
 };

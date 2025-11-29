@@ -37,7 +37,6 @@ const DataVsDowntime = () => {
                         Gaia Predictive uses real-time data to pinpoint exactly when maintenance is needed,
                         eliminating unnecessary downtime and extending asset life.
                     </p>
-                    <button className="btn btn-accent">Request Demo</button>
                 </div>
             </div>
         </section>

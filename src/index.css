@@ -378,8 +378,9 @@ section {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px;
-  background: linear-gradient(to bottom, transparent, #1a1a1a);
+  height: 400px;
+  /* Increased height for smoother fade */
+  background: linear-gradient(to bottom, transparent 0%, rgba(15, 23, 42, 0.8) 70%, #0f172a 100%);
   z-index: 3;
   pointer-events: none;
 }
@@ -442,7 +443,8 @@ section {
 
 /* Commitment Styles */
 .commitment {
-  background: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #050505 100%);
+  /* Changed to deep blue-black to match video header better */
+  background: radial-gradient(circle at 50% 0%, #0f172a 0%, #020617 100%);
   padding: var(--spacing-xxl) 0;
   position: relative;
   overflow: hidden;

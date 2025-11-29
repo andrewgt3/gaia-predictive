@@ -1652,7 +1652,7 @@ section {
 
   .commitment-right {
     justify-content: flex-start;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-md);
   }

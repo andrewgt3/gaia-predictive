@@ -1593,11 +1593,26 @@ section {
     padding: var(--spacing-lg) 0;
   }
 
+
   /* Cards */
   .solution-card,
-  .commitment-card,
   .metric-card {
     padding: var(--spacing-md);
+  }
+
+  /* Commitment Items - Mobile */
+  .commitment-item {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .commitment-right {
+    justify-content: flex-start;
+  }
+
+  .commitment-title {
+    font-size: 2.5rem;
+    text-align: left;
   }
 
   /* ROI Badge */

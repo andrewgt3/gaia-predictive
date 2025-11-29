@@ -19,8 +19,8 @@ const PlatformShowcase = () => {
         {
             id: 0,
             title: 'Real-Time Visibility',
-            subtitle: 'Global Fleet Visibility',
-            description: 'Monitor your entire production ecosystem from a single pane of glass. Real-time status updates, efficiency metrics, and critical alert aggregation ensure you never miss a beat.',
+            subtitle: 'Production Line Visibility',
+            description: 'Monitor your entire production line from a single pane of glass. Real-time status updates, efficiency metrics, and critical alert aggregation ensure you never miss a beat.',
             image: slideImages[0] // Will update this path once generated
         },
         {

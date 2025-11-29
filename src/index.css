@@ -481,6 +481,9 @@ section {
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacing-xxl) * 1.5);
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .commitment-item {

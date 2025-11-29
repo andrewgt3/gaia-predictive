@@ -17,6 +17,10 @@ const Contact = () => {
                                 <span className="contact-icon">✉️</span>
                                 <a href="mailto:andrew.dimaggio@gaiapredictive.com">andrew.dimaggio@gaiapredictive.com</a>
                             </div>
+                            <div className="contact-method">
+                                <span className="contact-icon">✉️</span>
+                                <a href="mailto:nick.treadwell@gaiapredictive.com">nick.treadwell@gaiapredictive.com</a>
+                            </div>
                         </div>
                     </div>
 

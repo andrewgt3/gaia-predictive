@@ -16,6 +16,7 @@ import Contact from './components/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 // Home page component
 const HomePage = () => (
